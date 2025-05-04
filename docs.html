@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>API Documentation</title>
+</head>
+<body>
+  <h1>API Gateway Documentation</h1>
+  <h2>Base URL:</h2>
+  <p><code>http://localhost/my_api_gateway/api/</code></p>
+
+  <h2>Endpoints</h2>
+  <ul>
+    <li><strong>GET /api/users</strong> - Returns a list of users</li>
+    <li><strong>GET /api/products</strong> - Returns a list of products</li>
+  </ul>
+
+  <h2>Headers</h2>
+  <p><code>X-API-Key</code> - Required for access (e.g., key123)</p>
+
+  <h2>Rate Limiting</h2>
+  <p>Max 10 requests per minute per API key</p>
+
+  <h2>Errors</h2>
+  <ul>
+    <li>401 Unauthorized - Missing or invalid API key</li>
+    <li>429 Too Many Requests - Rate limit exceeded</li>
+    <li>404 Not Found - Invalid endpoint</li>
+  </ul>
+</body>
+</html>
